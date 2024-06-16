@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>JavaScript Drum Machine</title>
+        <link rel="stylesheet" href="drum-machine-3.0.css">
+        <script src="drum-audio-3.0.js" defer></script>
+        <script src="drum-timing-3.0.js" defer></script>
+        <script src="drum-machine-3.0.js" defer></script>
+    </head>
+    <body>
+        <svg id="mainSVG" width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient id="grad-On">
+                  <stop offset="0%" stop-color="#FDECDB" />
+                  <stop offset="100%" stop-color="#F0AA63" />
+                </radialGradient>
+            
+                <radialGradient id="grad-Off">
+                  <stop offset="0%" stop-color="#BFBFBF" />
+                  <stop offset="100%" stop-color="#808080" />
+                </radialGradient>
+            </defs>
+        </svg>
+        <div>
+            <h2>Instructions</h2>
+            <br>
+            <div class="instructions">
+                <h3>On the Pads</h3>
+                <p>
+                    Each pad represents a 16th note. And its corresponding instrument is labeled on the left.
+                    When the pad is gray, it's turned off. And no sound will play on that beat.
+                    Clicking a <span class="gray-pad">gray pad</span> (sound off) will turn it on and trigger its sound.
+                </p>
+                <p>
+                    When the pad is  orange, it's turned on. And a sound will play on that beat.
+                    Clicking an <span class="orange-pad">orange pad</span> (sound on) will turn it off without triggering its sound.
+                    You can toggle the pads even while the machine is currently playing or stopped.
+                </p>
+
+            </div>
+            
+            <br>
+            <div class="instructions">
+                <h3>On the BPM</h3>
+                <p>
+                    The default beats per minute (BPM) is 90.
+                    Clicking on the <span class="bpm-controls-symbol">–</span> button decreases the BPM.
+                    While clicking on the <span class="bpm-controls-symbol">+</span> button increases it.
+                    You can also change the BPM regardless whether the machine is currently playing or stopped.
+                </p>
+            </div>
+
+            <br>
+            <div class="instructions">
+                <h3>On the Play/Stop Button</h3>
+                <p>
+                    By default, the machine is stopped. Clicking the <span class="play-stop-symbol">▶ PLAY</span> button will start the beat.
+                    On the other hand, clicking the <span class="play-stop-symbol">⏹ STOP</span> button will stop it.
+                    Note that no sound will play if all the pads are gray. Or no pad is orange.
+                </p>
+
+            </div>
+            <br>
+            
+
+            <h2>Attributions</h2>
+            <ul>
+                <li>Crash cymbal - crash_1a1 by ani_music -- <a href="https://freesound.org/s/219612/">https://freesound.org/s/219612/</a> -- License: Attribution 4.0</li>
+                <li>Hihat CL SM58-03.wav by Sascha Burghard -- <a href="https://freesound.org/s/46151/">https://freesound.org/s/46151/</a> -- License: Attribution 4.0</li>
+                <li>Snare Drum.wav by Shōtotsu -- <a href="https://freesound.org/s/689553/">https://freesound.org/s/689553/</a> -- License: Creative Commons 0</li>
+                <li>kick atomize 01.wav by DreStortion -- <a href="https://freesound.org/s/494184/">https://freesound.org/s/494184/</a> -- License: Creative Commons 0</li>
+            </ul>
+        </div>
+    </body>
+</html>
